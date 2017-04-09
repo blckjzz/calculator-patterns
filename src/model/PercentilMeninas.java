@@ -4,7 +4,7 @@ public class PercentilMeninas {
 
 	public String verificaPercentil(double imc, int idade) {
 
-		System.out.println("Idade:" + idade + "  // imc = " + imc);
+		//System.out.println("Idade:" + idade + "  // imc = " + imc);
 		if (idade >= 2 && idade < 4) {
 			if (imc <= 14.1) {
 				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(3);
@@ -249,7 +249,7 @@ public class PercentilMeninas {
 			}
 		}
 
-		return "valor inválido";
+		return "valor invï¿½lido";
 	}
 
 }

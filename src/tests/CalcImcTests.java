@@ -1940,7 +1940,7 @@ public class CalcImcTests {
 	}
 	@Test
 	public void testeValorInvalido() {
-		Assert.assertEquals("Valor Inv·lido",
+		Assert.assertEquals("Valor Inv√°lido",
 				cal.calcularIMC(-1, 0, "Masculino", 0));
 
 	}

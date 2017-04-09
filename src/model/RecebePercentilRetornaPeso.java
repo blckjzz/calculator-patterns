@@ -17,6 +17,6 @@ public class RecebePercentilRetornaPeso {
 		} else if (percentil > 95) {
 			return "Obesidade";
 		}
-		throw new NumberFormatException("Valor n„o coberto");
+		throw new NumberFormatException("Valor n√£o coberto");
 	}
 }
