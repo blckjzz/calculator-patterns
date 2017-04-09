@@ -9,7 +9,7 @@ public class PercentilMeninos {
 		// Sobrepeso = entre o percentil 85 e 95
 		// Obesidade = acima do percentil 95
 
-		System.out.println("Idade:" + idade + " imc = " + imc);
+		//System.out.println("Idade:" + idade + " imc = " + imc);
 
 		if (idade >= 2 && idade < 4) {
 			if (imc <= 15) {
@@ -116,19 +116,43 @@ public class PercentilMeninos {
 				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(97);
 			}
 
-		} else if (idade >= 18 && idade < 20) {
-			if (imc < 19) {
-				// Baixo peso = abaixo do percentil 10.
+		} else if (idade >= 18 && idade < 19) {
+
+			if (imc <= 18.2) {
 				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(3);
-			} else if (imc >19 & imc < 26) {
-				// Peso normal = entre o percentil 15 e 85
-				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(50);
-			} else if (imc > 26 && imc < 29.3) {
-				// Sobrepeso = entre o percentil 85 e 95
-				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(86);
-			} else if (imc > 29.3) {
-				// Obesidade = acima do percentil 95
+			} else if (imc > 18.2 && imc < 18.9) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(5);
+			} else if (imc > 18.9 && imc < 19) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(10);
+			} else if (imc > 19 && imc < 25.4) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(25);
+			} else if (imc > 25.4 && imc < 25.6) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(85);
+			} else if (imc > 25.6 && imc < 28.9) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(95);
+			} else if (imc > 28.9) {
 				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(97);
+			}
+
+		} else if (idade >= 19) {
+			if (imc <= 19.1) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(3);
+			} else if (imc > 19.1 && imc < 19.9) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(5);
+			} else if (imc > 19.9 && imc < 21) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(25);
+			} else if (imc > 21 && imc < 26.7) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(50);
+			} else if (imc > 26.7 && imc < 26.9) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(75);
+			} else if (imc > 26.9 && imc < 27.1) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(85);
+			} else if (imc > 27.1 && imc < 30.3) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(95);
+
+			} else if (imc > 30.3) {
+				return RecebePercentilRetornaPeso.recebePercentilRetornaPeso(97);
+
 			}
 
 		}
