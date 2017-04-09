@@ -249,7 +249,7 @@ public class PercentilMeninas {
 			}
 		}
 
-		return "valor inv�lido";
+		return "valor inválido";
 	}
 
 }

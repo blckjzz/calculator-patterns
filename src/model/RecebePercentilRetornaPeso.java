@@ -8,7 +8,8 @@ public class RecebePercentilRetornaPeso {
 	 */
 
 	public static String recebePercentilRetornaPeso(int percentil) {
-		if (percentil < 10) {
+		System.out.println("Percentil:" + percentil);
+		if (percentil <= 10) {
 			return "Baixo Peso";
 		} else if (percentil >= 15 && percentil <= 85) {
 			return "Peso Normal";
@@ -17,6 +18,6 @@ public class RecebePercentilRetornaPeso {
 		} else if (percentil > 95) {
 			return "Obesidade";
 		}
-		throw new NumberFormatException("Valor não coberto");
+		return null;
 	}
 }
